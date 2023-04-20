@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Roboto&family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    /* position: absolute; */
+    background-color: rgb(196, 191, 191);
+    /* width: 430px; */
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+
+}
+
+.sidebar nav {
+    padding: 30px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 33px 0;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer{
+    /* background-color: rgb(25, 0, 255); */
+    height: 58vh;
+    width: 80vw;
+    margin:144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+.devpic img{
+    height: 38vh;
+    
+}
+
+.hello{
+    font-size: 35px;
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+}
+.about{
+    font-size: 21px;
+}
+.more{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.buttons{
+    margin-top:33px ;
+}
+.buttons button{
+    padding: 3px 9px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 21px;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+
+.buttons button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+ }
+ .buttons button:hover a {
+    background-color: white;
+    color: dodgerblue;
+    
+}
+
+
+.buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+    
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactfrom h1{
+    font-family: 'Source Code Pro', monospace;
+    /* text-align: center; */
+    padding: 12px 0;
+}
+
+.contactfrom{
+    font-family: 'Roboto', sans-serif;
+    padding: 0 44px;
+    padding-top: 220px;
+    
+}
+
+.contactfrom form div{
+    padding: 12px 0;
+}
+
+#emailHelp{
+    font-size: 13px;
+    color: #1b1bd1;
+    margin: 0 5px;
+}
+
+.contactfrom form div input{
+    /* width: 10vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0 ;
+    padding: 3px;
+    
+}
+
+
+
+/* #form-check{
+    width: 5px;
+} */
+
+.presentaddress{
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.permanentaddress{
+    font-family: 'Roboto', sans-serif;
+    margin: 50px 195px;
+}
+
+.permanentaddress p{
+    font-family: 'Source Code Pro', monospace;
+}
+.permanentaddress hr{
+    margin: 27px;
+    border-top: 7px solid rgb(163, 102, 244);
+    border-radius: 7px;
+}
+.presentaddress p{
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+.mepic img{
+    width: 18vw;
+    height: 37vh;
+    margin: 0 136px;
+    
+}
+
+.aboutinfo p{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+}
+
+.aboutinfo {
+    /* font-family: 'Roboto', sans-serif; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* color: chartreuse; */
+    margin: 0 15px;
+    
+}
+
+.aboutinfo h1{
+    padding-bottom: 17px;
+}
+
+.aboutcontainer h1{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 17px;
+    /* color: blue; */
+}
+
+
+
+.aboutcontainer{
+    padding-top: 32px;
+}
+
+
+
+
+.skill1{
+    width: 310px;
+    height: 15px;
+    background-color: rgb(9, 255, 0);
+}
+.skill2{
+    width: 250px;
+    height: 15px;
+    background-color: rgb(81, 0, 255);
+}
+.skill3{
+    width: 110px;
+    height: 15px;
+    background-color: rgb(208, 255, 05);
+}.skill4{
+    width: 352px;
+    height: 15px;
+    background-color: red;
+}.skill5{
+    width: 300px;
+    height: 15px;
+    background-color: rgb(255, 0, 204);
+}.skill6{
+    width: 355px;
+    height: 15px;
+    background-color: rgb(9, 8, 8);
+}.skill7{
+    width: 360px;
+    height: 15px;
+    background-color: rgb(0, 217, 255);
+}.skill8{
+    width: 364px;
+    height: 15px;
+    background-color: rgb(255, 0, 38);
+}
+
+@media (max-width: 990px){
+    *{
+        
+
+    }
+    .devpic{
+        display: none;
+    }
+}
+
+
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.ham {
+    position: absolute;
+    cursor: pointer;
+    top: 3px;
+    left: 10px;
+}
+.cross{
+    margin-left: -24px;
+    cursor: pointer;
+}
+
+
